@@ -18,7 +18,13 @@ namespace DynamicLINQ
             InitializeComponent();
         }
 
-        //LINQ 中直接使用SQL語法，需安裝組件 System.Linq.Dynamic
+        /// <summary>
+        /// LINQ 中直接使用SQL語法，需安裝組件 System.Linq.Dynamic
+        /// 
+        /// CustOrderHist 預存程序呼叫使用
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             NorthwindEntities dc = new NorthwindEntities();
